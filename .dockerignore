@@ -1,0 +1,11 @@
+.git
+.github
+.gitignore
+
+.mise.toml
+
+dist
+Dockerfile
+.dockerignore
+
+node_modules
