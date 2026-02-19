@@ -1,6 +1,6 @@
 {
   "type": "module",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "name": "@tenxprotocols/hello-http",
   "description": "HTTP echo server that reflects request data as JSON.",
   "main": "dist/index.js",
