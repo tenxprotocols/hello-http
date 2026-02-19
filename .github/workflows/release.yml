@@ -44,7 +44,7 @@ jobs:
         with:
           registry: ${{ env.REGISTRY }}
           username: ${{ github.actor }}
-          password: ${{ secrets.RELEASE_TOKEN }}
+          password: ${{ secrets.DOCKER_RELEASE_TOKEN }}
 
       - name: Extract metadata
         id: meta
