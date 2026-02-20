@@ -1,5 +1,13 @@
 # Changelog
 
+## [2.1.0](https://github.com/tenxprotocols/hello-http/compare/v2.0.0...v2.1.0) (2026-02-20)
+
+
+### Features
+
+* **k8s:** add Kubernetes manifests for hello-http service ([577320a](https://github.com/tenxprotocols/hello-http/commit/577320a4f68ccba034890f23ef79a9ecb109f734))
+* **release:** add multi-platform Docker support ([6d3566b](https://github.com/tenxprotocols/hello-http/commit/6d3566bf73d846cefbdb27f9f3636c7f251b54f0))
+
 ## [2.0.0](https://github.com/tenxprotocols/hello-http/compare/v1.0.0...v2.0.0) (2026-02-19)
 
 
