@@ -242,10 +242,10 @@ export function echoHandler(config: EchoConfig): Middleware {
       ctx.type = contentTypeOverride
     }
 
-    // Log the echo payload (separate from the HTTP access log in index.ts).
+    // Log the incoming request as a structured pino object (separate from the
+    // HTTP access log in app.ts).
     if (!config.logIgnorePath || !config.logIgnorePath.test(ctx.path)) {
-      const spacer = config.logWithoutNewline ? undefined : 4
-      config.logger.info(JSON.stringify(echo, null, spacer))
+      config.logger.info({ req: echo }, "request")
     }
   }
 }

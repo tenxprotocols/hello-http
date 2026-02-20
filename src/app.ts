@@ -72,7 +72,10 @@ export function createApp() {
       await next()
       const ms = Date.now() - start
       if (!LOG_IGNORE_PATH || !LOG_IGNORE_PATH.test(ctx.path)) {
-        logger.info(`${ctx.method} ${ctx.url} ${ctx.status} - ${ms}ms`)
+        logger.info(
+          { method: ctx.method, url: ctx.url, status: ctx.status, ms, body: ctx.body },
+          "response",
+        )
       }
     })
   }
