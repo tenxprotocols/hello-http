@@ -1,0 +1,19 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: hello-http
+  namespace: tenx
+  labels:
+    app: hello-http
+spec:
+  rules:
+    - host: hello-http.example.com
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: hello-http
+                port:
+                  name: http
