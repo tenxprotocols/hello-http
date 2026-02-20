@@ -36,15 +36,18 @@ spec:
               containerPort: 8080
             - name: https
               containerPort: 8443
+          env:
+            - name: LOG_IGNORE_PATH
+              value: "^/(healthz|metrics)$"
           readinessProbe:
             httpGet:
-              path: /
+              path: /healthz
               port: http
             initialDelaySeconds: 5
             periodSeconds: 10
           livenessProbe:
             httpGet:
-              path: /
+              path: /healthz
               port: http
             initialDelaySeconds: 10
             periodSeconds: 30
