@@ -1,6 +1,6 @@
 {
   "type": "module",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "name": "@tenxprotocols/hello-http",
   "packageManager": "pnpm@10.30.0",
   "description": "HTTP echo server that reflects request data as JSON.",
