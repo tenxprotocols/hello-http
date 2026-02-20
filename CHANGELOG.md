@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.1.1](https://github.com/tenxprotocols/hello-http/compare/v2.1.0...v2.1.1) (2026-02-20)
+
+
+### Bug Fixes
+
+* **k8s:** update health probes and add log ignore path env ([284fcb2](https://github.com/tenxprotocols/hello-http/commit/284fcb201c022cf2b1641b7299337fbec6178351))
+
 ## [2.1.0](https://github.com/tenxprotocols/hello-http/compare/v2.0.0...v2.1.0) (2026-02-20)
 
 
